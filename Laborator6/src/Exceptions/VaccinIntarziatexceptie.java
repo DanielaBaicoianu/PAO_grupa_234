@@ -1,4 +1,4 @@
-package model1.exceptii;
+package Exceptions;
 
 public class VaccinIntarziatexceptie extends RuntimeException{
 

@@ -1,4 +1,4 @@
-package model1;
+package Model;
 
 public interface Animal {
 

@@ -1,4 +1,4 @@
-package model1;
+package Model;
 
 public class Caine implements Animal {
     private String nume;

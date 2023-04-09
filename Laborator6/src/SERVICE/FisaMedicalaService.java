@@ -1,10 +1,10 @@
-package SERVICE;
+package Service;
 
-import model1.Animal;
-import model1.FisaMedicala;
-import model1.Vaccin;
-import model1.exceptii.Exceptie2;
-import model1.exceptii.VaccinIntarziatexceptie;
+import Model.Animal;
+import Model.FisaMedicala;
+import Model.Vaccin;
+import Exceptions.Exceptie2;
+import Exceptions.VaccinIntarziatexceptie;
 
 import java.time.LocalDate;
 import java.util.*;

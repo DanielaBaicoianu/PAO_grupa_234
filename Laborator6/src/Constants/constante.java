@@ -1,11 +1,5 @@
 package Constants;
 
-import model1.Pisica;
-import model1.Animal;
-
-import java.util.List;
-import java.util.Objects;
-
 public class constante {
     public final String LISTA_ANIMALE_GOALA = "Niciun animal in lista";
 

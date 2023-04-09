@@ -1,10 +1,9 @@
-package SERVICE;
+package Service;
 
-import model1.Animal;
-import model1.exceptii.Exceptie1;
+import Model.Animal;
+import Exceptions.Exceptie1;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Serviciu1 {
 
