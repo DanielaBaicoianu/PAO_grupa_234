@@ -3,10 +3,8 @@ package model1;
 import java.util.List;
 
 public class FisaMedicala {
-
     private List<Vaccin> vaccinuri;
-    private String numemedic;
-
+    private String numeMedic;
 
     public List<Vaccin> getVaccinuri() {
         return vaccinuri;
@@ -16,12 +14,12 @@ public class FisaMedicala {
         this.vaccinuri = vaccinuri;
     }
 
-    public String GETNumemedic() {
-        return numemedic;
+    public String getNumeMedic() {
+        return numeMedic;
     }
 
-    public void setNumemedic(String numemedic) {
-        this.numemedic = numemedic;
+    public void setNumeMedic(String numeMedic) {
+        this.numeMedic = numeMedic;
     }
 
     public void addVaccin(Vaccin vaccin){

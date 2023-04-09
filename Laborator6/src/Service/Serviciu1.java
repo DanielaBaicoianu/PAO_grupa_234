@@ -1,16 +1,14 @@
-package SERVICE;
+package Service;
 
 import model1.Animal;
 import model1.exceptii.Exceptie1;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Serviciu1 {
-
     public List<Animal> animale;
 
-    private void getAnimale(Animal animal){
+    private void addAnimal(Animal animal){
         animale.add(animal);
     }
 
@@ -19,5 +17,4 @@ public class Serviciu1 {
             throw new Exceptie1("Niciun animal in lista");
         return true;
     }
-
 }
