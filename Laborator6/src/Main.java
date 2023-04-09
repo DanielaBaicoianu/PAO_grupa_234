@@ -16,6 +16,7 @@ public class Main {
 
         List<Animal> animalList = new ArrayList<>();
         animalList.add(myDog);
+
         animalList.add(myCat);
 
         FisaMedicala dogMedicalRecord = myDog.getFisaMedicala();
