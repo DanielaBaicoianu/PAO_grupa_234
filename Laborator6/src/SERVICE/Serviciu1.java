@@ -7,10 +7,21 @@ import java.util.List;
 import java.util.Objects;
 
 public class Serviciu1 {
+    private List<Animal> animale;
 
-    public List<Animal> animale;
+    public Serviciu1(List<Animal> animale) {
+        this.animale = animale;
+    }
 
-    private void getAnimale(Animal animal){
+    public List<Animal> getAnimale() {
+        return animale;
+    }
+
+    public void setAnimale(List<Animal> animale) {
+        this.animale = animale;
+    }
+
+    public void adaugaAnimamel(Animal animal){
         animale.add(animal);
     }
 

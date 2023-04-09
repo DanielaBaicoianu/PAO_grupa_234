@@ -3,7 +3,6 @@ package model1;
 import java.util.List;
 
 public class FisaMedicala {
-
     private List<Vaccin> vaccinuri;
     private String numemedic;
 
@@ -16,15 +15,28 @@ public class FisaMedicala {
         this.vaccinuri = vaccinuri;
     }
 
-    public String GETNumemedic() {
+    public String getNumeMedic() {
         return numemedic;
     }
 
-    public void setNumemedic(String numemedic) {
+    public void setNumeMedic(String numemedic) {
         this.numemedic = numemedic;
     }
 
     public void addVaccin(Vaccin vaccin){
+        if (vaccinuri == null | vaccinuri.isEmpty()) {
+            this.vaccinuri = new ArrayList<>();
+        }
         this.vaccinuri.add(vaccin);
     }
+
+    @Override
+    public String toString() {
+        return "FisaMedicala{" +
+                "\nvaccinuri:" + vaccinuri +
+                "\nnumeMedic:'" + numeMedic  +
+                '}';
+    }
+
+
 }

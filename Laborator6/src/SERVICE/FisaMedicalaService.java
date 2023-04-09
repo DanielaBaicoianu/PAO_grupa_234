@@ -12,21 +12,24 @@ import java.util.*;
 import static Constants.constante.listavaccinurigoala;
 
 public class FisaMedicalaService {
-
     private FisaMedicala fisa;
 
-    public FisaMedicalaService(FisaMedicala fisa){
-        fisa = fisa;
+    public FisaMedicalaService(FisaMedicala fisa) {
+        this.fisa = fisa;
     }
 
-    protected void adaugareVaccin(Vaccin v){
+    public FisaMedicala getFisa() {
+        return fisa;
+    }
+
+    public void adaugareVaccin(Vaccin v){
         boolean listaVaccinuriGoala = Serviciu1.utile(Collections.singletonList(fisa.getVaccinuri()));
 
         try{
             fisa.addVaccin(v);
         }
         catch(Exception ex){
-
+            System.out.println("Nu se poate!");
         }
     }
 
