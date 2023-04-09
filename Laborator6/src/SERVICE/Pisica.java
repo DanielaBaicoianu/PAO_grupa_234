@@ -2,7 +2,7 @@ package SERVICE;
 
 public class Pisica {
 
-    public String nume;
+    private String nume;
     private int Varsta;
 
 

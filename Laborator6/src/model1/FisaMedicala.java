@@ -27,4 +27,8 @@ public class FisaMedicala {
     public void addVaccin(Vaccin vaccin){
         this.vaccinuri.add(vaccin);
     }
+
+   
+
+
 }

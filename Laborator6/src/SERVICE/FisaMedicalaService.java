@@ -16,7 +16,7 @@ public class FisaMedicalaService {
     private FisaMedicala fisa;
 
     public FisaMedicalaService(FisaMedicala fisa){
-        fisa = fisa;
+        this.fisa = fisa;
     }
 
     protected void adaugareVaccin(Vaccin v){
@@ -29,6 +29,7 @@ public class FisaMedicalaService {
 
         }
     }
+
 
     public boolean verificareVaccin(Animal pisica){
         if(pisica.getFisaMedicala() == null)
@@ -47,6 +48,10 @@ public class FisaMedicalaService {
 
         }
         return true;
+
+
     }
+
+
 
 }
