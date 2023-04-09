@@ -1,11 +1,16 @@
-package model1;
+package Models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FisaMedicala {
 
-    private List<Vaccin> vaccinuri;
+    private List<Vaccin> vaccinuri = new ArrayList<>();
     private String numeMedic;
+
+    public FisaMedicala(String numeMedic){
+        this.numeMedic = numeMedic;
+    }
 
     public FisaMedicala(List<Vaccin> vaccinuri, String numeMedic) {
         this.vaccinuri = vaccinuri;
@@ -21,7 +26,7 @@ public class FisaMedicala {
     }
 
     public String getNumeMedic() {
-        return numemedic;
+        return numeMedic;
     }
 
     public void setNumeMedic(String numeMedic) {

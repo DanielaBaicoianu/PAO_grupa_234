@@ -1,8 +1,8 @@
-package model1.exceptii;
+package Exceptions;
 
-public class VaccinIntarziatexceptie extends RuntimeException{
+public class ExceptieVaccinIntarziat extends RuntimeException{
 
-    public VaccinIntarziatexceptie(String m){
-        super(m);
+    public ExceptieVaccinIntarziat(String message){
+        super(message);
     }
 }

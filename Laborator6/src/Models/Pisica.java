@@ -1,19 +1,19 @@
-package SERVICE;
+package Models;
+import Utile.Utile;
 
-public class Pisica {
+public class Pisica extends Animal{
 
-    public String nume;
-    private int Varsta;
-
-    public Pisica(String nume, int varsta) {
+    private String nume;
+    private int varsta;
+    public Pisica(String nume, int varsta, FisaMedicala fisaMedicala) {
+        super(fisaMedicala);
         this.nume = nume;
-        Varsta = varsta;
-    }
-    
-    public String vorbeste(){
-        return "Pisica " + this.nume + " miauna";
+        this.varsta = varsta;
     }
 
+    public String vorbeste(){
+        return "Pisica " + this.nume + Utile.pisicaVorbeste();
+    }
     public String getNume() {
         return nume;
     }
@@ -23,10 +23,10 @@ public class Pisica {
     }
 
     public int getVarsta() {
-        return Varsta;
+        return varsta;
     }
 
     public void setVarsta(int varsta) {
-        Varsta = varsta;
+        this.varsta = varsta;
     }
 }

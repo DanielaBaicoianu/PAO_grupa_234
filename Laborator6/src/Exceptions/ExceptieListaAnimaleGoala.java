@@ -1,8 +1,8 @@
 package Exceptions;
 
-public class Exceptie2 extends RuntimeException{
+public class ExceptieListaAnimaleGoala extends RuntimeException{
 
-    public Exceptie2(String message){
+    public ExceptieListaAnimaleGoala(String message){
         super(message);
     }
 }

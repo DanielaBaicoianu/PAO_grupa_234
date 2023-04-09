@@ -1,18 +1,17 @@
-package model1;
+package Models;
+import Utile.Utile;
 
-public class Caine implements Animal{
+public class Caine extends Animal{
     private String nume;
     private String rasa;
-    private FisaMedicala fisaMedicala;
-
     public Caine(String nume, String rasa, FisaMedicala fisaMedicala) {
+        super(fisaMedicala);
         this.nume = nume;
         this.rasa = rasa;
-        this.fisaMedicala = fisaMedicala;
     }
 
     public String vorbeste(){
-        return "Cainele " + this.nume + " latra";
+        return "Cainele " + this.nume + Utile.caineleVorbeste();
 
     }
     public String getNume() {
@@ -31,11 +30,4 @@ public class Caine implements Animal{
         this.rasa = rasa;
     }
 
-    public FisaMedicala getFisaMedicala() {
-        return fisaMedicala;
-    }
-
-    public void setFisaMedicala(FisaMedicala fisaMedicala) {
-        this.fisaMedicala = fisaMedicala;
-    }
 }
