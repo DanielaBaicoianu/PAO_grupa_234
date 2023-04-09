@@ -15,11 +15,19 @@ public class FisaMedicalaService {
 
     private FisaMedicala fisa;
 
-    public FisaMedicalaService(FisaMedicala fisa){
-        fisa = fisa;
+    public FisaMedicalaService(FisaMedicala fisa) {
+        this.fisa = fisa;
     }
 
-    protected void adaugareVaccin(Vaccin v){
+    public FisaMedicala getFisa() {
+        return fisa;
+    }
+
+    public void setFisa(FisaMedicala fisa) {
+        this.fisa = fisa;
+    }
+
+    public void adaugareVaccin(Vaccin v){
         boolean listaVaccinuriGoala = Serviciu1.utile(Collections.singletonList(fisa.getVaccinuri()));
 
         try{
@@ -34,11 +42,11 @@ public class FisaMedicalaService {
         if(pisica.getFisaMedicala() == null)
             throw new Exceptie2(listavaccinurigoala);
         List<Vaccin> v = pisica.getFisaMedicala().getVaccinuri();
-        Vaccin va = v.get(v.size());
+        Vaccin va = v.get(v.size() - 1);
         Calendar calendar = Calendar.getInstance(Locale.FRANCE);
         calendar.set(Calendar.YEAR, LocalDate.now().getYear());
         Calendar calendar1 = Calendar.getInstance(Locale.FRANCE);
-        calendar1.set(Calendar.YEAR, va.data.getYear());
+        calendar1.set(Calendar.YEAR, va.getData().getYear());
         if(calendar1.get(Calendar.YEAR) < calendar.get(Calendar.YEAR))
             throw new VaccinIntarziatexceptie("Vaccin intarziat");
         try{

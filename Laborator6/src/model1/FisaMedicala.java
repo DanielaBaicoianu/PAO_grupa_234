@@ -1,5 +1,6 @@
 package model1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FisaMedicala {
@@ -7,6 +8,12 @@ public class FisaMedicala {
     private List<Vaccin> vaccinuri;
     private String numemedic;
 
+    public FisaMedicala(List<Vaccin> vaccinuri, String numemedic) {
+        this.vaccinuri = vaccinuri;
+        this.numemedic = numemedic;
+    }
+
+    public FisaMedicala() {}
 
     public List<Vaccin> getVaccinuri() {
         return vaccinuri;
@@ -25,6 +32,17 @@ public class FisaMedicala {
     }
 
     public void addVaccin(Vaccin vaccin){
+        if (this.vaccinuri == null){
+            this.vaccinuri = new ArrayList<>();
+        }
         this.vaccinuri.add(vaccin);
+    }
+
+    @Override
+    public String toString() {
+        return "FisaMedicala{" +
+                "vaccinuri=" + vaccinuri +
+                ", numemedic='" + numemedic + '\'' +
+                '}';
     }
 }
