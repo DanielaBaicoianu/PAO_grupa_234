@@ -1,6 +1,6 @@
 package SERVICE;
 
-public class Pisica {
+public class Pisica extends Animal{
     private String nume;
     private int varsta;
     private FisaMedicala fisaMedicala;

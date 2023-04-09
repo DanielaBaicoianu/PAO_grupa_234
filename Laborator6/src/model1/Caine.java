@@ -1,6 +1,6 @@
 package model1;
 
-public class Caine {
+public class Caine extends Animal{
     private String nume;
     private String rasa;
     private FisaMedicala fisaMedicala;
