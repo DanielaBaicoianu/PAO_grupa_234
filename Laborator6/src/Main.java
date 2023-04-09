@@ -1,5 +1,5 @@
-import model1.*;
-import SERVICE.*;
+import Models.*;
+import Services.*;
 import Constants.*;
 
 import java.util.ArrayList;
