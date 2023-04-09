@@ -1,13 +1,18 @@
 package model1;
 
-public class Caine {
-    public String NUME;
+public class Caine implements Animal{
+    private String nume;
 
-    public String rasa;
+    private String rasa;
+    private FisaMedicala fisaMedicala;
+
+
+    public FisaMedicala getFisaMedicala() {
+        return fisaMedicala;
+    }
 
     public String vorbeste(){
-        return "Cainele " + this.NUME + " latra";
-
+        return "Cainele " + this.nume + " latra";
     }
 
 }
