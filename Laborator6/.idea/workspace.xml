@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1151420-9b7f-45f0-8814-7366c8d4a98e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Laborator6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants/Constante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/Constante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SERVICE/FisaMedicalaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SERVICE/FisaMedicalaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SERVICE/Serviciu1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SERVICE/Serviciu1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptii/Exceptie1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptii/Exceptie1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptii/Exceptie2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptii/Exceptie2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptii/VaccinIntarziatexceptie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptii/VaccinIntarziatexceptie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model1/Caine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model1/Caine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model1/FisaMedicala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model1/FisaMedicala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model1/Pisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model1/Pisica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model1/Vaccin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model1/Vaccin.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OCyAGyhxUVyyPMPVGAjusaww2Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/rares/Desktop/java_tema/PAO_grupa_234/Laborator6"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1151420-9b7f-45f0-8814-7366c8d4a98e" name="Changes" comment="" />
+      <created>1681078712216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681078712216</updated>
+    </task>
+    <servers />
+  </component>
+</project>

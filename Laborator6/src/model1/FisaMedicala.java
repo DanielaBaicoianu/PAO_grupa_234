@@ -7,6 +7,10 @@ public class FisaMedicala {
     private List<Vaccin> vaccinuri;
     private String numemedic;
 
+    public FisaMedicala(List<Vaccin> vaccinuri, String numemedic) {
+        this.vaccinuri = vaccinuri;
+        this.numemedic = numemedic;
+    }
 
     public List<Vaccin> getVaccinuri() {
         return vaccinuri;
@@ -26,5 +30,13 @@ public class FisaMedicala {
 
     public void addVaccin(Vaccin vaccin){
         this.vaccinuri.add(vaccin);
+    }
+
+    @Override
+    public String toString() {
+        return "FisaMedicala{" +
+                "vaccinuri=" + vaccinuri +
+                ", numemedic='" + numemedic + '\'' +
+                '}';
     }
 }

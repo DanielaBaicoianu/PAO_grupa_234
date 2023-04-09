@@ -1,4 +1,4 @@
-package model1.exceptii;
+package exceptii;
 
 public class Exceptie2 extends RuntimeException{
 
