@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Serviciu1 {
 
-    public List<Animal> animale;
+    private List<Animal> animale;
 
     public Serviciu1() {
     }

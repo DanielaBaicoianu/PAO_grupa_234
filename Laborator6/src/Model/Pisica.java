@@ -2,7 +2,7 @@ package Model;
 
 public class Pisica implements Animal {
 
-    public String nume;
+    private String nume;
     private int varsta;
 
     private FisaMedicala fisaMedicala;
