@@ -9,7 +9,8 @@ import model1.exceptii.VaccinIntarziatexceptie;
 import java.time.LocalDate;
 import java.util.*;
 
-import static Constants.constante.listavaccinurigoala;
+import static Constants.constante.LISTA_VACCINURI_GOALA;
+
 
 public class FisaMedicalaService {
 
@@ -32,13 +33,13 @@ public class FisaMedicalaService {
 
     public boolean verificareVaccin(Animal pisica){
         if(pisica.getFisaMedicala() == null)
-            throw new Exceptie2(listavaccinurigoala);
+            throw new Exceptie2(LISTA_VACCINURI_GOALA);
         List<Vaccin> v = pisica.getFisaMedicala().getVaccinuri();
         Vaccin va = v.get(v.size());
         Calendar calendar = Calendar.getInstance(Locale.FRANCE);
         calendar.set(Calendar.YEAR, LocalDate.now().getYear());
         Calendar calendar1 = Calendar.getInstance(Locale.FRANCE);
-        calendar1.set(Calendar.YEAR, va.data.getYear());
+        calendar1.set(Calendar.YEAR, va.getData().getYear());
         if(calendar1.get(Calendar.YEAR) < calendar.get(Calendar.YEAR))
             throw new VaccinIntarziatexceptie("Vaccin intarziat");
         try{
