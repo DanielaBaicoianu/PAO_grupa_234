@@ -7,7 +7,13 @@ public class FisaMedicala {
     private List<Vaccin> vaccinuri;
     private String numemedic;
 
+    public FisaMedicala(List<Vaccin> vaccinuri, String numemedic) {
+        this.vaccinuri = vaccinuri;
+        this.numemedic = numemedic;
+    }
 
+    public FisaMedicala() {
+    }
     public List<Vaccin> getVaccinuri() {
         return vaccinuri;
     }
