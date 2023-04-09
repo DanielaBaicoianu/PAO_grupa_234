@@ -1,15 +1,15 @@
-package SERVICE;
+package Services;
 
-import model1.Animal;
-import model1.FisaMedicala;
-import model1.Vaccin;
-import model1.exceptii.Exceptie2;
-import model1.exceptii.VaccinIntarziatexceptie;
+import Models.Animal;
+import Models.FisaMedicala;
+import Models.Vaccin;
+import Models.exceptii.Exceptie2;
+import Models.exceptii.VaccinIntarziatexceptie;
 
 import java.time.LocalDate;
 import java.util.*;
 
-import static Constants.constante.listavaccinurigoala;
+import static Constants.Constante.listavaccinurigoala;
 
 public class FisaMedicalaService {
 
@@ -34,6 +34,7 @@ public class FisaMedicalaService {
     public boolean verificareVaccin(Animal pisica){
         if(pisica.getFisaMedicala() == null)
             throw new Exceptie2(listavaccinurigoala);
+
         List<Vaccin> v = pisica.getFisaMedicala().getVaccinuri();
         Vaccin va = v.get(v.size());
         Calendar calendar = Calendar.getInstance(Locale.FRANCE);

@@ -1,30 +1,51 @@
-package SERVICE;
+package Models;
 
 public class Pisica {
 
     private String nume;
-    private int Varsta;
+    private int varsta;
+    private FisaMedicala fisaMedicala;
 
 
-    public Pisica(String nume){
-        this.nume = nume;
-    }
+    public Pisica(String nume, int varsta) {
+		this.nume = nume;
+		this.varsta = varsta;
+		this.fisaMedicala = new FisaMedicala();
+	}
 
-    public Pisica(int v){
-        this.Varsta = v;
-    }
-
-    public Pisica(){
-
-    }
+    public String getNume() {
+        return nume;
+        }
 
     private void setNume(String n){
         this.nume = nume;
-        this.Varsta = 1;
+        
     }
+
+    public int getVarsta() {
+		return varsta;
+	}
+
+    public void setVarsta(int varsta) {
+        this.varsta = varsta;
+        }
+
+
 
     public String vorbeste(){
         return "Pisica " + this.nume + " miauna";
     }
+
+    @Override
+
+    public String toString() {
+
+    return "Pisica [nume=" + nume + ", varsta=" + varsta + ", fisaMedicala=" + fisaMedicala + "]";
+
+    @Override
+
+    public FisaMedicala getFisaMedicala() {
+		return fisaMedicala;
+	}
 
 }
