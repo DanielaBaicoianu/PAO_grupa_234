@@ -1,6 +1,6 @@
 package model1;
 
-public class Caine extends Animal{
+public class Caine implements Animal{
     private String nume;
     private String rasa;
     private FisaMedicala fisaMedicala;
@@ -45,7 +45,7 @@ public class Caine extends Animal{
     }
 
     public String vorbeste(){
-        return "Cainele " + this.NUME + " latra";
+        return "Cainele " + this.nume + " latra";
     }
 
 }

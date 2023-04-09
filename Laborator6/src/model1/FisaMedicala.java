@@ -1,10 +1,11 @@
 package model1;
 
 import java.util.List;
+import java.util.*;
 
 public class FisaMedicala {
     private List<Vaccin> vaccinuri;
-    private String numemedic;
+    private String numeMedic;
 
 
     public List<Vaccin> getVaccinuri() {
@@ -16,11 +17,11 @@ public class FisaMedicala {
     }
 
     public String getNumeMedic() {
-        return numemedic;
+        return numeMedic;
     }
 
-    public void setNumeMedic(String numemedic) {
-        this.numemedic = numemedic;
+    public void setNumeMedic(String numeMedic) {
+        this.numeMedic = numeMedic;
     }
 
     public void addVaccin(Vaccin vaccin){

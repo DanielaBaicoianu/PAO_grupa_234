@@ -1,6 +1,7 @@
-package SERVICE;
+import model1.FisaMedicala;
+import model1.*;
 
-public class Pisica extends Animal{
+public class Pisica implements Animal{
     private String nume;
     private int varsta;
     private FisaMedicala fisaMedicala;
@@ -39,7 +40,7 @@ public class Pisica extends Animal{
     public String toString() {
         return "Pisica{" +
                 "\nnume: " + nume +
-                "\nvarsta: " + rasa +
+                "\nvarsta: " + varsta +
                 "\nfisaMedicala: " + fisaMedicala +
                 '}';
     }

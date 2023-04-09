@@ -1,6 +1,5 @@
 package Constants;
 
-import SERVICE.Pisica;
 import model1.Animal;
 
 import java.util.List;
