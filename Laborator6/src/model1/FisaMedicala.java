@@ -5,7 +5,7 @@ import java.util.List;
 public class FisaMedicala {
 
     private List<Vaccin> vaccinuri;
-    private String numemedic;
+    private String numeMedic;
 
 
     public List<Vaccin> getVaccinuri() {
@@ -17,11 +17,11 @@ public class FisaMedicala {
     }
 
     public String GETNumemedic() {
-        return numemedic;
+        return numeMedic;
     }
 
     public void setNumemedic(String numemedic) {
-        this.numemedic = numemedic;
+        this.numeMedic = numemedic;
     }
 
     public void addVaccin(Vaccin vaccin){

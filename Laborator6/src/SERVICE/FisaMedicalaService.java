@@ -16,7 +16,7 @@ public class FisaMedicalaService {
     private FisaMedicala fisa;
 
     public FisaMedicalaService(FisaMedicala fisa){
-        fisa = fisa;
+        this.fisa = fisa;
     }
 
     protected void adaugareVaccin(Vaccin v){
@@ -32,7 +32,7 @@ public class FisaMedicalaService {
 
     public boolean verificareVaccin(Animal pisica){
         if(pisica.getFisaMedicala() == null)
-            throw new Exceptie2(listavaccinurigoala);
+            throw new Exceptie2("lista vaccinuri goala");
         List<Vaccin> v = pisica.getFisaMedicala().getVaccinuri();
         Vaccin va = v.get(v.size());
         Calendar calendar = Calendar.getInstance(Locale.FRANCE);

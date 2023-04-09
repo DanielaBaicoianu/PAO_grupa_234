@@ -2,9 +2,13 @@ package SERVICE;
 
 public class Pisica {
 
-    public String nume;
+    private String nume;
     private int Varsta;
 
+    public Pisica(String nume, int varsta) {
+        this.nume = nume;
+        Varsta = varsta;
+    }
 
     public Pisica(String nume){
         this.nume = nume;
@@ -20,7 +24,6 @@ public class Pisica {
 
     private void setNume(String n){
         this.nume = nume;
-        this.Varsta = 1;
     }
 
     public String vorbeste(){
