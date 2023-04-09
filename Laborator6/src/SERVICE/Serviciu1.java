@@ -1,5 +1,6 @@
 package SERVICE;
 
+import Constants.constante;
 import model1.Animal;
 import model1.exceptii.Exceptie1;
 
@@ -10,13 +11,20 @@ public class Serviciu1 {
 
     public List<Animal> animale;
 
-    private void getAnimale(Animal animal){
-        animale.add(animal);
+    private List<Animal> getAnimale(){
+        return animale;
     }
 
     public static Boolean utile(List<Object> listaAnimale){
-        if(listaAnimale.isEmpty())
-            throw new Exceptie1("Niciun animal in lista");
+        try {
+            if (listaAnimale.isEmpty())
+                throw new Exceptie1(constante.LISTA_ANIMALE_GOALA);
+        }
+        catch (Exceptie1 exceptie1)
+        {
+            System.out.println(exceptie1.getMessage());
+            return false;
+        }
         return true;
     }
 

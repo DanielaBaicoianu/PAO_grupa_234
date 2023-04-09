@@ -2,8 +2,12 @@ package Utile;
 
 public class Utile {
 
-    public String pisicaVorbeste(){
-        return "";
+    public static String pisicaVorbeste() {
+        return "miau";
+    }
+
+    public static String caineVorbeste() {
+        return "ham";
     }
 
 }
