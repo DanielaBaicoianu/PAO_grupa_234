@@ -2,9 +2,9 @@ package model1;
 
 public interface Animal {
 
-    FisaMedicala getFisaMedicala();
+    public FisaMedicala getFisaMedicala();
 
-    String vorbeste();
+    public String vorbeste();
 
 
 

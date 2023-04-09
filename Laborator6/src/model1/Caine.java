@@ -1,26 +1,30 @@
 package model1;
 
-public class Caine {
-    private String NUME;
+public class Caine implements Animal{
+    private String nume;
 
     private String rasa;
 
+	private	FisaMedicala fisaMedicala;
+
     public String vorbeste(){
-        return "Cainele " + this.NUME + " latra";
+        return "Cainele " + this.nume + " latra";
 
     }
 
     public Caine(String NUME, String rasa) {
-		this.NUME = NUME;
+		this.nume = nume;
 		this.rasa = rasa;
+		this.fisaMedicala = new FisaMedicala();
+
 	}
 
     public String getNUME() {
-		return NUME;
+		return nume;
 	}
 
-    public void setNUME(String nUME) {
-		NUME = nUME;
+    public void setNUME(String nume) {
+		nume = nume;
 	}
 
     public String getRasa() {
@@ -28,6 +32,24 @@ public class Caine {
 	}
 	public void setRasa(String rasa) {
 		this.rasa = rasa;
+	}
+
+	@Override
+
+	public FisaMedicala getFisaMedicala() {
+		return fisaMedicala;
+	}
+
+	@Override
+
+	public String toString() {
+		return "Caine [nume=" + nume + ", rasa=" + rasa + ", fisaMedicala=" + fisaMedicala + "]";
+	}
+
+	@Override
+
+	public String vorbeste() {
+		return "Cainele " + this.nume + " face ham";
 	}
 
 }

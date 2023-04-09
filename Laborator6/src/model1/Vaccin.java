@@ -4,19 +4,19 @@ import java.util.Date;
 
 public class Vaccin {
 
-    private String DENUMIRE_VACCIN;
+    private String denumire_vaccin;
     private Date data;
 
-    public Vaccin(String DENUMIRE_VACCIN, Date data) {
-		this.DENUMIRE_VACCIN = DENUMIRE_VACCIN;
+    public Vaccin(String denumire_vaccin, Date data) {
+		this.denumire_vaccin = denumire_vaccin;
 		this.data = data;
 	}
 
-	public String getDENUMIRE_VACCIN() {
-		return DENUMIRE_VACCIN;
+	public String getdenumire_vaccin() {
+		return denumire_vaccin;
 	}
-	public void setDENUMIRE_VACCIN(String DENUMIRE_VACCIN) {
-		this.DENUMIRE_VACCIN = DENUMIRE_VACCIN;
+	public void setdenumire_vaccin(String denumire_vaccin) {
+		this.denumire_vaccin = denumire_vaccin;
 	}
 	public Date getData() {
 		return data;
@@ -26,7 +26,7 @@ public class Vaccin {
 	}
 	@Override
 	public String toString() {
-		return "Vaccin{" + "DENUMIRE_VACCIN=" + DENUMIRE_VACCIN + ", data=" + data + '}';
+		return "Vaccin{" + "denumire vaccin=" + denumire_vaccin + ", data=" + data + '}';
 	}
 
 

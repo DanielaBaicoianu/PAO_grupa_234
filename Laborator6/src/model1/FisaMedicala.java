@@ -25,10 +25,18 @@ public class FisaMedicala {
     }
 
     public void addVaccin(Vaccin vaccin){
+        if (vaccin == null){
+			throw new IllegalArgumentException("Vaccinul nu poate fi null");
+		}
+
         this.vaccinuri.add(vaccin);
     }
 
-   
+   @Override
+
+   public String toString() {
+		return " FisaMedicala [vaccinuri=" + vaccinuri + ", nume medic=" + numemedic + "]";
+	}
 
 
 }
