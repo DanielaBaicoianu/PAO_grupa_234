@@ -10,8 +10,20 @@ public class Serviciu1 {
 
     public List<Animal> animale;
 
-    private void getAnimale(Animal animal){
+    public Serviciu1(List<Animal> animale) {
+        this.animale = animale;
+    }
+
+    public void AddAnimale(Animal animal){
         animale.add(animal);
+    }
+
+    public List<Animal> getAnimale() {
+        return animale;
+    }
+
+    public void setAnimale(List<Animal> animale) {
+        this.animale = animale;
     }
 
     public static Boolean utile(List<Object> listaAnimale){
