@@ -8,7 +8,7 @@ import java.util.Objects;
 
 public class Serviciu1 {
 
-    public List<Animal> animale;
+    private List<Animal> animale;
 
     private void getAnimale(Animal animal){
         animale.add(animal);

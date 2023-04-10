@@ -1,5 +1,9 @@
+import model1.Caine;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Caine caine = new Caine("Rex", "labrador");
+
+        System.out.println(caine.vorbeste());
     }
 }
