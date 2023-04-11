@@ -1,0 +1,1 @@
+[Student{nume='Student', prenume='Prenume1', facultate='UniBuc', grupa='123', catalog=[[matematica 10], [informatica 8, informatica 9]]}]
