@@ -1,0 +1,4 @@
+May 16, 2023 7:07:25 PM service.impl.StudentServiceImpl deleteUser
+INFO: Method deleteUser called with parameters: firstName = Catalina ; lastName = Mihai 
+May 16, 2023 7:07:25 PM service.impl.StudentServiceImpl deleteUser
+WARNING: Student Catalina Mihai not found.
